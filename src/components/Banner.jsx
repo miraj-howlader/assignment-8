@@ -11,8 +11,8 @@ const Banner = () => {
 
       
         <motion.div
-        initial={{opacity:0,y:-20}}
-        animate={{opacity:1,y:0}}
+        initial={{opacity:0,x:-20}}
+        animate={{opacity:1,x:0}}
         transition={{duration:0.8, delay:0.2}}
          className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
