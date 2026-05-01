@@ -1,6 +1,8 @@
+'use client'
 import { Button } from "@heroui/react"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 const Banner = () => {
   return (
@@ -8,7 +10,11 @@ const Banner = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
 
       
-        <div className="flex-1">
+        <motion.div
+        initial={{opacity:0,y:-20}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.8}}
+         className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Discover Your Perfect Aesthetic
           </h1>
@@ -23,10 +29,14 @@ const Banner = () => {
               Browse Now
             </Button>
           </Link>
-        </div>
+        </motion.div>
 
         
-        <div className="flex-1 flex justify-center">
+        <motion.div
+        initial={{opacity:0,x:-20}}
+        animate={{opacity:1,x:0}}
+        transition={{duration:0.7}}
+         className="flex-1 flex justify-center">
           <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
             <Image
               src="/tiles/banner.webp"
@@ -35,7 +45,7 @@ const Banner = () => {
               className="object-cover rounded-xl shadow-lg"
             />
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

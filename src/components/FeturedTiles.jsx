@@ -1,6 +1,8 @@
+
 import { getAllTiles } from '@/lib/data'
 import React from 'react'
 import TilesCard from './TilesCard'
+
 
 const FeturedTiles = async  () => {
 
@@ -8,7 +10,8 @@ const FeturedTiles = async  () => {
     const featured = data.slice(0,4)
 
   return (
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section
+       className="max-w-7xl mx-auto px-4 py-16">
 
      
       <h2 className="text-3xl font-bold mb-10 text-center">
