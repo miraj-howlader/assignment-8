@@ -10,7 +10,7 @@ const Marquee = () => {
         <span>🔥 Premium Tile Collection Now Available</span>
         <span>🏠 Upgrade Your Home with Style</span>
 
-        {/* duplicate for smooth loop */}
+     
         <span>🆕 New Arrivals: Ceramic Blue Tile</span>
         <span>⭐ Weekly Feature: Modern Geometric Patterns</span>
         <span>👥 Join the Community</span>
