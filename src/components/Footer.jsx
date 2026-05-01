@@ -1,10 +1,16 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900  text-white mt-10">
+    <motion.footer
+     initial={{opacity:0,y:-20}}
+    animate={{opacity:1,y:0}}
+    transition={{duration:0.5}}
+     className="bg-gray-900  text-white mt-10">
       <div className="max-w-7xl  mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <Image
@@ -70,7 +76,7 @@ const Footer = () => {
       <div className="border-t border-gray-700 text-center py-4 text-gray-500 text-sm">
         © {new Date().getFullYear()} TileStore. All rights reserved.
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
