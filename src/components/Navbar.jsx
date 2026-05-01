@@ -3,6 +3,8 @@ import { authClient } from '@/lib/auth-client'
 import { Avatar, Button } from '@heroui/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
 
 const Navbar = () => {
     const userData = authClient.useSession()
@@ -13,7 +15,11 @@ const Navbar = () => {
     }
 
   return (
-    <nav className="w-full border-b bg-white">
+    <motion.nav
+       initial={{opacity:0,y:-20}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.8, delay:0.2}}
+     className="w-full border-b bg-white">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
         
@@ -67,7 +73,7 @@ const Navbar = () => {
             </div>}
 
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 

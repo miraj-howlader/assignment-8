@@ -15,8 +15,8 @@ const ProfilePage = () => {
     <motion.div
     initial={{opacity:0,y:-20}}
     animate={{opacity:1,y:0}}
-    transition={{duration:0.5}}
-    
+    transition={{duration:0.5,delay:0.2}}
+
      className=' mt-6'>
         <Card className='max-w-96 mx-auto flex flex-col items-center border'>
             <Avatar className=' h-30 w-30'>
