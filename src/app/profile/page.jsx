@@ -18,7 +18,7 @@ const ProfilePage = () => {
     transition={{duration:0.5,delay:0.2}}
 
      className=' mt-6'>
-        <Card className='max-w-96 mx-auto flex flex-col items-center border'>
+        <Card className='max-w-96 mx-auto flex flex-col items-center border pb-24'>
             <Avatar className=' h-30 w-30'>
                 <Avatar.Image src={user?.image} alt='user' referrerPolicy='no-referrer'/>
                 <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>

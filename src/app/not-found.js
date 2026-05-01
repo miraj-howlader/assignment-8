@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -24,7 +25,7 @@ export default function NotFound() {
         </h1>
 
        
-        <p className="text-gray-300 mt-3 text-lg">
+        <p className="text-gray-700 mt-3 text-lg">
           Oops! This tile doesn’t exist.
         </p>
 
