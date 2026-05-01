@@ -18,7 +18,7 @@ const Banner = () => {
             Transform your floors and walls with style and elegance.
           </p>
 
-          <Link href="/tiles">
+          <Link href="/all-tiles">
             <Button className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition">
               Browse Now
             </Button>
