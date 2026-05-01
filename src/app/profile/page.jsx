@@ -13,7 +13,7 @@ const ProfilePage = () => {
   return (
     <div className=' mt-6'>
         <Card className='max-w-96 mx-auto flex flex-col items-center border'>
-            <Avatar className=' h-20 w-20'>
+            <Avatar className=' h-30 w-30'>
                 <Avatar.Image src={user?.image} alt='user' referrerPolicy='no-referrer'/>
                 <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
             </Avatar>

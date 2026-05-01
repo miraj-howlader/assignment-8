@@ -8,7 +8,9 @@ const Navbar = () => {
     const userData = authClient.useSession()
     const user = userData.data?.user
 
-    const hadnleSingout = ()=>{}
+    const hadnleSingout =async ()=>{
+       await authClient.signOut()
+    }
 
   return (
     <nav className="w-full border-b bg-white">
